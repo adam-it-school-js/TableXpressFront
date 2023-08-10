@@ -10,3 +10,32 @@ body,
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+
+@font-face {
+  font-family: 'Alegreya';
+  src: url('/src/assets/fonts/Alegreya-VariableFont_wght.ttf');
+}
+
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/src/assets/fonts/NotoSans-Regular.ttf');
+}
+
+.montserrat {
+  font-family: 'Montserrat';
+}
+
+.alegreya {
+  font-family: 'Alegreya';
+}
+
+.noto-sans {
+  font-family: 'Noto Sans';
+}
