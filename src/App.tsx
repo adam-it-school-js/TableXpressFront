@@ -18,10 +18,7 @@ export const App = () => {
                 path={route.path}
                 element={
                   <Guard roles={Roles}>
-                    <div className="flex">
-                      <SideBar />
-                      <Component />
-                    </div>
+                    <Component />
                   </Guard>
                 }
               />
