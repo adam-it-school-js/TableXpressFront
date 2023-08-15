@@ -1,10 +1,9 @@
-import React, { FC, useState } from "react";
+import { FC } from "react";
 import backgroundImage from "../../assets/images/Wallpaper of About us.png"
 import logo from "../../assets/images/Logo.png"
 import { SubmitHandler, useForm } from "react-hook-form";
-import { PasswordInput } from "./components/PasswordInput";
 import { TInputsForm } from "./props.context";
-import { PhoneNumberInput } from "./components/PhoneNumberInput";
+import { Input } from "../../components/Input/Input";
 
 
 const SignInPage: FC<{}> = () => {
@@ -43,11 +42,11 @@ const MainContainer = () => {
       
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="flex justify-center items-center mt-[54px] font-[700] noto-sans text-[15px]" >
-          <PhoneNumberInput register={register} errors={errors}/>
+          <Input type='phoneNumber' register={register} errors={errors}/>
         </div>
 
         <div className="flex justify-center items-center mt-[18px] font-[700] noto-sans text-[15px]" >
-          <PasswordInput register={register} errors={errors}/>
+          <Input type='password' register={register} errors={errors}/>
         </div>
 
         <div className="flex justify-center items-center mt-[17px] montserrat text-[15px]">
