@@ -34,6 +34,5 @@ const Header: FC = () => {
     </div>
   );
 };
-//<div className="flex w-[317px h-[40px]"></div>
 
 export default Header;
