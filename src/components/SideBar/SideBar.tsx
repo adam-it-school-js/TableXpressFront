@@ -31,7 +31,7 @@ const sidebarLinks: SidebarLinkProps[] = [
   { icon: LogOut, text: "Log Out" },
 ];
 
-const SideBar: FC = () => {
+export const SideBar: FC = () => {
   return (
     <div className="flex">
       <div className="w-[246px] bg-[#FFF] h-full pt-[20px] pl-[40px] pr-[35px] pb-[937px] flex flex-col justify-between">
