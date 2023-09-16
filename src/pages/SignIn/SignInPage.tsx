@@ -5,11 +5,10 @@ import {
   SubmitHandler,
   FieldValues,
 } from "react-hook-form";
-
-import Wallpaper from "../../assets/icons/Wallpaper of About us.png";
-import Wallpaper1 from "../../assets/icons/Wallpaper of About us1.png";
 import ANBBQ from "../../assets/icons/ANBBQ.png";
 import Copyright from "../../assets/icons/Copyright.svg";
+import loginBg from "../../assets/images/login-bg.jpg";
+
 const SignInPage: FC<{}> = () => {
   const { handleSubmit, control } = useForm();
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
@@ -17,14 +16,13 @@ const SignInPage: FC<{}> = () => {
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="flex items-center ">
-        <img className="w-[810px] h-[1056px]" src={Wallpaper} alt="Wallpaper" />
-        <img
-          className="w-[810px] h-[1056px]"
-          src={Wallpaper1}
-          alt="Wallpaper1"
-        />
+    <div
+      className="flex justify-center"
+      style={{ backgroundImage: `url(${loginBg})` }}
+    >
+      <div className="flex items-center bg-cover bg-center">
+        {/* <img className="w-full h-full" src={Wallpaper} alt="Wallpaper" />
+        <img className="w-full h-full" src={Wallpaper1} alt="Wallpaper1" /> */}
         <div
           className="absolute left-[562px] top-[148px] w-[508px] h-[621px]  bg-white"
           style={{ borderRadius: "50px" }}
