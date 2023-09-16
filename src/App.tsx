@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { appRoutes, ROOT_PATHS } from "./routes";
 import "./App.css";
-import SideBar from "./components/SideBar/SideBar";
+import Layout from "./components/Layout/Layout";
 
 export const App = () => {
   return (
@@ -18,7 +18,9 @@ export const App = () => {
                 path={route.path}
                 element={
                   <Guard roles={Roles}>
-                    <Component />
+                    <Layout>
+                      <Component />
+                    </Layout>
                   </Guard>
                 }
               />

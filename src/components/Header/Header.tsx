@@ -2,10 +2,11 @@ import React, { FC } from "react";
 import Search from "../../assets/icons/search.svg";
 import TopIcon from "../../assets/icons/topIcon.svg";
 import Avatar from "../../assets/icons/Avatar.svg";
-const Header: FC = () => {
+
+export const Header: FC = () => {
   return (
     <div className="flex">
-      <div className="ml-[246px] flex w-full h-[98px] bg-[white]">
+      <div className="flex w-full h-[98px] bg-[white]">
         <h1 className="text-[38px] px-[0px] w-[465px] h-[54px] ml-[12px] mt-[24px] mb-[20px] mr-[0]  text-[#0A376E] font-size: 40px font-bold font-alegreya">
           RESERVATION SCHEDULE
         </h1>
