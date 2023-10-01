@@ -33,19 +33,16 @@ const sidebarLinks: SidebarLinkProps[] = [
 
 export const SideBar: FC = () => {
   return (
-    <div className="flex">
-      <div className="w-[246px] bg-[#FFF] h-full pt-[20px] pl-[40px] pr-[35px] pb-[937px] flex flex-col justify-between">
-        <img src={Logo} className="w-[197px] h-[95px]" alt="logo" />
-        <h1 className="ml-[16px] mr-[24px] mt-[-2px] w-[206px] h-[33px] text-[#0A376EDE] font-bold font-alegreya">
-          Branch Su Van Hanh
-        </h1>
-        <div className="mt-[40px] flex flex-col">
-          {sidebarLinks.map((link, index) => (
-            <SidebarLink key={index} icon={link.icon} text={link.text} />
-          ))}
-        </div>
+    <div className="w-[246px] bg-[#FFF] pt-[20px] pl-[40px] pr-[35px] pb-[937px] flex flex-col justify-between">
+      <img src={Logo} className="w-[197px] h-[95px]" alt="logo" />
+      <h1 className="ml-[16px] mr-[24px] mt-[-2px] w-[206px] h-[33px] text-[#0A376EDE] font-bold font-alegreya">
+        Branch Su Van Hanh
+      </h1>
+      <div className="mt-[40px] flex flex-col">
+        {sidebarLinks.map((link, index) => (
+          <SidebarLink key={index} icon={link.icon} text={link.text} />
+        ))}
       </div>
-      <div className="border-r w-[1px] h-[1052px] bg-[#DDD]"></div>
     </div>
   );
 };

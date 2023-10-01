@@ -11,6 +11,7 @@ export const App = () => {
         const Component: any = route.component;
         const Guard = route.guard;
         const Roles = route.roles;
+        const Layout = route.Layout;
         return (
           <React.Fragment key={route.path}>
             {Guard && (
@@ -18,9 +19,7 @@ export const App = () => {
                 path={route.path}
                 element={
                   <Guard roles={Roles}>
-                    <Layout>
-                      <Component />
-                    </Layout>
+                    <Component />
                   </Guard>
                 }
               />
