@@ -15,4 +15,11 @@ export const appRoutes: IAppRouteSetting[] = [
     path: ROOT_PATHS.notfound,
     component: lazy(() => import("./../pages/NotFound/NotFound")),
   },
+  {
+    path: ROOT_PATHS.dashboard,
+    guard: AuthGuard,
+    roles: [AppRoles.ADMIN],
+    component: lazy(() => import("../pages/Dashboard/DashboardPage")),
+    Layout: lazy(() => import("../components/Layout/Layout")),
+  },
 ];
