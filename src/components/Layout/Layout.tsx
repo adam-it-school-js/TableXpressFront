@@ -3,7 +3,7 @@ import { Header, SideBar } from "..";
 
 const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <div className="flex w-full">
+    <div className="flex w-full h-full">
       <SideBar />
       <div>
         <Header />
